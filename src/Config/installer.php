@@ -12,6 +12,7 @@ return [
     | by looping through the array and run "extension_loaded" on it.
     |
     */
+    'lang'=>'en',
     'requirements' => [
         'openssl',
         'pdo',
