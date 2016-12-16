@@ -12,7 +12,9 @@ class WelcomeController extends Controller
      * @return \Illuminate\View\View
      */
     public function welcome()
-    {
+    { 
+        \Session::flush(); 
+        \Session::put('locale', config('installer.lang'));
         return view('vendor.installer.welcome');
     }
 }
